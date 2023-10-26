@@ -120,7 +120,7 @@ hr{ border-top-color:#dadada;}
 	color: #ffffff;  background:#000;
 }
 #user-nav > ul > li > a > i, #sidebar li a i {
-	opacity: .5; 
+	/* opacity: .5;  */
 	margin-top: 2px;
 }
 #user-nav > ul > li > a:hover > i, #user-nav > ul > li.open > a > i {
@@ -135,8 +135,8 @@ hr{ border-top-color:#dadada;}
 #user-nav > ul ul > li > a {
 	text-align: left;
 }
-#user-nav > ul ul > li > a:hover {
-}
+/* #user-nav > ul ul > li > a:hover {
+} */
 /* Sidebar Navigation */
 #sidebar {
 	display: block;
@@ -449,7 +449,7 @@ hr{ border-top-color:#dadada;}
 	margin-bottom: 3px;
 	margin-top: 6px;
 }
-.stat-boxes .peity_bar_good, .stat-boxes .peity_line_good, {
+.stat-boxes .peity_bar_good, .stat-boxes .peity_line_good {
  color: #459D1C;
 }
 .stat-boxes .peity_bar_neutral, .stat-boxes .peity_line_neutral {
@@ -458,8 +458,8 @@ hr{ border-top-color:#dadada;}
 .stat-boxes .peity_bar_bad, .stat-boxes .peity_line_bad {
 	color: #BA1E20;
 }
-.stats-plain {
-}
+/* .stats-plain { */
+/* } */
 
 .site-stats {
 	margin: 0;

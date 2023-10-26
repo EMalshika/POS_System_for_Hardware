@@ -1,9 +1,9 @@
 body {
-	background:#2E363F;
+	background: #30363e;
 }
 
 #header {
-	background-color: #1f262d;
+	background-color: #30363e;
    margin-top:10px;
 }
 #search input[type=text], #search button {
@@ -15,33 +15,42 @@ body {
 #sidebar > ul{border-bottom: 1px solid #37414b}
 #sidebar > ul > li {
 	border-top: 1px solid #37414b; border-bottom: 1px solid #1f262d;
+	font-size: 15px;
 }
 #sidebar > ul > li.active {
-    background-color: #27a9e3; border-bottom: 1px solid #27a9e3;  border-top: 1px solid #27a9e3;
+    background-color: #4a89dc; border-bottom: 1px solid #4a89dc;  border-top: 1px solid #27a9e3;
 }
+#sidebar > ul > li> ul > li.active {
+    background-color: #4a89dc; border-bottom: 1px solid #4a89dc;  border-top: 1px solid #27a9e3;
+}
+#sidebar > ul > li a{ color:#fff; text-decoration:none;}
 #sidebar > ul > li.active a{ color:#fff; text-decoration:none;}
+#sidebar > ul > li > ul > li.active a{ color:#fff; text-decoration:none;}
 
 #sidebar > ul > li > a > .label {
-	background-color:#F66;
+	background-color:#30363e;
 }
-#sidebar > ul > li > a:hover {
+/*#sidebar > ul > li > a:hover {
 	background-color: #27a9e3; color:#fff;
 }
+#sidebar > ul > li > a:hover > .label {
+	background-color: #27a9e3; color:#fff;
+}*/
 #sidebar > ul li ul {
-	background-color: #1e242b;
+	background-color: #282d33; 
 }
 #sidebar > ul li ul li a{ color:#939da8}
-#sidebar > ul li ul li a:hover, #sidebar > ul li ul li.active a {
+/*#sidebar > ul li ul li a:hover, #sidebar > ul li ul li.active a {
 	color: #fff;
 	background-color: #28b779;
-}
+}*/
 
 
 #search input[type=text] {
 	background-color: #47515b; color: #fff; 
 }
 #search input[type=text]:focus {
-	color: #2e363f; color: #fff; box-shadow:none;
+	color: #30363e; color: #fff; box-shadow:none;
 }
 .dropdown-menu li a:hover, .dropdown-menu .active a, .dropdown-menu .active a:hover {
     color: #eeeeee;
