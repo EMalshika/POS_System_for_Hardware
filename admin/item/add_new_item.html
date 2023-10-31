@@ -1,11 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add New Item</title>
+    <title>Add New User</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="../css/fullcalendar.css" />
+    <link rel="stylesheet" href="../css/matrix-style.css" />
+    <link rel="stylesheet" href="../css/matrix-media.css" />
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="../stylesheet" href="css/jquery.gritter.css" />
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+
+    <div id="header">
+
+        <h2 style="color: white;position: absolute">
+            <a href="../dashboard.html" style="color:white; margin-left: 30px; margin-top: 40px">Name</a>
+        </h2>
+    </div>
+
+
+
+    <!--top-Header-menu-->
+    <div id="user-nav" class="navbar navbar-inverse">
+        <ul class="nav">
+            <li class="dropdown" id="profile-messages">
+                <a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i
+                        class="fa icon-user"></i> <span class="text" style="color:#fff;">Welcome User</span><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="icon-check"></i> My Tasks</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <!--sidebar-menu-->
+    <div id="sidebar">
+        <ul>
+            <li>
+                <a href="../dashboard.html"><i class="fa fa-home"></i><span>Dashboard</span></a>
+            </li>
+
+            <li class="submenu"><a href="#"><i class="fa fa-user"></i> <span>User</span> <span
+                        class="label label-important"><i class="fa fa-caret-down"></i></span></a>
+                <ul>
+                    <li><a href="add_new_user.html">Add User</a></li>
+                    <li><a href="edit_user.html">Edit User</a></li>
+                </ul>
+            </li>
+
+            <li class="submenu"><a href="#"><i class="fa fa-th-list" style="color: #4a89dc;"></i> <span>Item</span> <span
+                        class="label label-important"><i class="fa fa-caret-down"></i></span></a>
+                <!--<ul>
+                    <li><a href="../item/add_new_item.html">Add Item</a></li>
+                    <li><a href="../item/edit_item.html">Edit Item</a></li>
+                </ul>-->
+            </li>
+
+            <li class="active"><a href="add_new_item.html">Add User</a></li>
+                    
+            <li><a href="edit_item.html">Edit User</a></li>
+
+            <li>
+                <a href="../billing.html"><i class="fa fa-usd"></i><span>Billing</span></a>
+            </li>
+
+            <li class="submenu"><a href="#"><i class="fa fa-folder-open"></i> <span>Report</span> <span
+                        class="label label-important"><i class="fa fa-caret-down"></i></span></a>
+                <ul>
+                    <li><a href="../report/inventory.html">Inventory</a></li>
+                    <li><a href="../report/cash_registry.html">Cash Registry</a></li>
+                    <li><a href="../report/billing_history.html">Billing History</a></li>
+                    <li><a href="../report/cashier_log.html">Cashier Log</a></li>
+                    <li><a href="../report/credit_report.html">Credit Report</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <!--sidebar-menu-->
+    <div id="search">
+
+        <a href="../index.html" style="color:white"><i class="icon icon-share-alt"></i><span>LogOut</span></a>
+
+    </div>
+    <!--main-container-part-->
+    <div id="content">
+        <!--breadcrumbs-->
+        <div id="content-header">
+            <div id="breadcrumb"><a href="../dashboard.html" title="Go to Home" class="tip-bottom"><i
+                        class="icon-home"></i>
+                    Home</a></div>
+        </div>
+        <!--End-breadcrumbs-->
+
+        <!--Action boxes-->
+        <div class="container-fluid">
+
+            <div class="row-fluid" style="background-color: white; min-height: 1000px; padding:10px;">
+                <div class="span12">
+                    <div class="widget-box">
+                        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                            <h5>Item-info</h5>
+                        </div>
+                        <div class="widget-content nopadding">
+                            <form name="form2" action="" method="post" class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label">Item Name :</label>
+                                    <div class="controls">
+                                        <input type="text" class="span11" placeholder="First name" name="firstname" />
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Last Name :</label>
+                                    <div class="controls">
+                                        <input type="text" class="span11" placeholder="Last name" name="lastname" />
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">User Name :</label>
+                                    <div class="controls">
+                                        <input type="text" class="span11" placeholder="User name" name="username" />
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Password :</label>
+                                    <div class="controls">
+                                        <input type="password" class="span11" placeholder="Enter Password" name="password" />
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Select Role :</label>
+                                    <div class="controls">
+                                        <select name="role" class="span11">
+                                            <option>user</option>
+                                            <option>admin</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="alert alert-danger" id="error" style="display:none;">
+                                    This User Name Already Exit! Please Try Another.
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" name="submit1" class="btn btn-success">Save</button>
+                                </div>
+                                <div class="alert alert-success" id="success" style="display:none;">
+                                    Record Inserted Successfully!
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>User Name</th>
+                                    <th>Role</th>
+                                    <th>Status</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>F Name</td>
+                                    <td>L Name</td>
+                                    <td>U Name</td>
+                                    <td>User</td>
+                                    <td>Status</td>
+                                    <td><a href="">Edit</a></td>
+                                    <td><a href="">Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--end-main-container-part-->
+
+    <!--Footer-part-->
+
+    <div class="row-fluid">
+        <div id="footer" class="span12" style="color:white"> Designed And Developed By: Your Name</div>
+    </div>
+
+    <!--end-Footer-part-->
+
+    <script src="../js/excanvas.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.ui.custom.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.flot.min.js"></script>
+    <script src="../js/jquery.flot.resize.min.js"></script>
+    <script src="../js/jquery.peity.min.js"></script>
+    <script src="../js/fullcalendar.min.js"></script>
+    <script src="../js/matrix.js"></script>
+    <script src="../js/matrix.dashboard.js"></script>
+    <script src="../js/jquery.gritter.min.js"></script>
+    <script src="../js/matrix.interface.js"></script>
+    <script src="../js/matrix.chat.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+    <script src="../js/matrix.form_validation.js"></script>
+    <script src="../js/jquery.wizard.js"></script>
+    <script src="../js/jquery.uniform.js"></script>
+    <script src="../js/select2.min.js"></script>
+    <script src="../js/matrix.popover.js"></script>
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script src="../js/matrix.tables.js"></script>
 </body>
+
 </html>
