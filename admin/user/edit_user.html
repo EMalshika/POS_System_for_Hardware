@@ -33,7 +33,7 @@
         <ul class="nav">
             <li class="dropdown" id="profile-messages">
                 <a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i
-                        class="fa fa-user"></i> <span class="text" style="color:#fff;">Welcome User</span><b class="caret"></b></a>
+                        class="fa icon-user"></i> <span class="text" style="color:#fff;">Welcome User</span><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
                     <li class="divider"></li>
@@ -57,13 +57,13 @@
             <li class="submenu"><a href="#"><i class="fa fa-user" style="color: #4a89dc;"></i> <span>User</span> <span
                         class="label label-important"><i class="fa fa-caret-down"></i></span></a>
                 <!--<ul>
-                    <li><a href="add_new_user.html">Add User</a></li>
-                    <li class="active"><a href="edit_user.html">Edit User</a></li>
+                    <li class="active"><a href="add_new_user.html">Add User</a></li>
+                    <li><a href="edit_user.html">Edit User</a></li>
                 </ul>-->
             </li>
 
             <li><a href="add_new_user.html">Add User</a></li>
-
+                    
             <li class="active"><a href="edit_user.html">Edit User</a></li>
 
             <li class="submenu"><a href="#"><i class="fa fa-th-list"></i> <span>Item</span> <span
@@ -94,7 +94,7 @@
     <!--sidebar-menu-->
     <div id="search">
 
-        <a href="../index.html" style="color:white"><i class="fa fa-share-alt"></i><span>LogOut</span></a>
+        <a href="../index.html" style="color:white"><i class="icon icon-share-alt"></i><span>LogOut</span></a>
 
     </div>
     <!--main-container-part-->
@@ -111,7 +111,99 @@
         <div class="container-fluid">
 
             <div class="row-fluid" style="background-color: white; min-height: 1000px; padding:10px;">
-                Edit User
+                <div class="span12">
+                    <div class="widget-box">
+                        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                            <h5>Personal-info</h5>
+                        </div>
+                        <div class="widget-content nopadding">
+                            <form name="form2" action="" method="post" class="form-horizontal">
+                                <div class="span6">
+                                    <div class="control-group">
+                                        <label class="control-label">First Name :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11" placeholder="First name" name="firstname" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Last Name :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11" placeholder="Last name" name="lastname" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">User Name :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11" placeholder="User name" name="username" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div class="control-group">
+                                        <label class="control-label">Password :</label>
+                                        <div class="controls">
+                                            <input type="password" class="span11" placeholder="Enter Password" name="password" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Select Role :</label>
+                                        <div class="controls">
+                                            <select name="role" class="span11">
+                                                <option>user</option>
+                                                <option>admin</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Select Status :</label>
+                                        <div class="controls">
+                                            <select name="status" class="span11">
+                                                <option>Active</option>
+                                                <option>Deactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert alert-danger" id="error" style="display:none;">
+                                    This User Name Already Exit! Please Try Another.
+                                </div>
+                                <div class="form-actions">
+                                    <!--write a new css for this button-->
+                                    <button type="submit" name="submit1" class="btn" style="background-color: #08c; color: white;">Save</button>
+                                </div>
+                                <div class="alert alert-success" id="success" style="display:none;">
+                                    Record Inserted Successfully!
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>User Name</th>
+                                    <th>Role</th>
+                                    <th>Status</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>F Name</td>
+                                    <td>L Name</td>
+                                    <td>U Name</td>
+                                    <td>User</td>
+                                    <td>Status</td>
+                                    <td><a href="">Edit</a></td>
+                                    <td><a href="">Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
         </div>
