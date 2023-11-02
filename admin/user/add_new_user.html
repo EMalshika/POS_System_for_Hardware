@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/matrix-media.css" />
     <link href="../font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="../stylesheet" href="css/jquery.gritter.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -169,7 +170,8 @@
                                 </div>
                                 <div class="form-actions">
                                     <!--write a new css for this button-->
-                                    <button type="submit" name="submit1" class="btn" style="background-color: #08c; color: white;">Save</button>
+                                    <button type="submit" name="submit1" class="btn resetbtn">Save</button>
+                                    <button type="submit" name="submit1" class="btn savebtn">Save</button>
                                 </div>
                                 <div class="alert alert-success" id="success" style="display:none;">
                                     Record Inserted Successfully!
@@ -186,8 +188,6 @@
                                     <th>User Name</th>
                                     <th>Role</th>
                                     <th>Status</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -197,8 +197,6 @@
                                     <td>U Name</td>
                                     <td>User</td>
                                     <td>Status</td>
-                                    <td><a href="">Edit</a></td>
-                                    <td><a href="">Delete</a></td>
                                 </tr>
                             </tbody>
                         </table>
