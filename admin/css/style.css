@@ -21,6 +21,9 @@
     padding-left: 8px;
     padding-right: 8px;
 }
+.editbtn:hover{
+    background-color: #08c;
+}
 .editbtn .fa{
     color: white;
 }
