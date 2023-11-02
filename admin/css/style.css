@@ -15,3 +15,12 @@
 .resetbtn .fa{
     color: white;
 }
+.editbtn{
+    background-color: #08c;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.editbtn .fa{
+    color: white;
+}
