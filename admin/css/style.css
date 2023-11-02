@@ -6,3 +6,12 @@
     padding-right: 50px;
     border-radius: 12px;
 }
+.resetbtn{
+    background-color: #08c;
+    border-radius: 12px;
+    float: right;
+    margin-right: 10px;
+}
+.resetbtn .fa{
+    color: white;
+}
