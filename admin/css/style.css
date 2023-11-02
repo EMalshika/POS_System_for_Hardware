@@ -27,3 +27,15 @@
 .editbtn .fa{
     color: white;
 }
+.deletebtn{
+    background-color: #ff0000;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.deletebtn:hover{
+    background-color: #ff0000;
+}
+.deletebtn .fa{
+    color: white;
+}
