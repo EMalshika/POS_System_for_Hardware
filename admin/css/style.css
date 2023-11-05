@@ -6,11 +6,19 @@
     padding-right: 50px;
     border-radius: 12px;
 }
+.savebtn:hover{
+    background-color: #08c;
+    color: white;
+}
 .resetbtn{
     background-color: #08c;
     border-radius: 12px;
     float: right;
     margin-right: 10px;
+    margin-left: 10px;
+}
+.resetbtn:hover{
+    background-color: #08c;
 }
 .resetbtn .fa{
     color: white;
@@ -137,6 +145,24 @@
     border-radius: 12px;
 }
 .printbtn1:hover{
+    background-color: #08c;
+    color: white;
+}
+.billlable{
+    margin-left: -60px;
+}
+.billlable .btnradius{
+    border-radius: 10px;
+}
+.addbtn{
+    background-color: #08c;
+    color: white;
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 12px;
+}
+.addbtn:hover{
     background-color: #08c;
     color: white;
 }

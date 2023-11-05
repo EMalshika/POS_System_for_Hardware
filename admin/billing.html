@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Billing</title>
+    <title>Bill</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/matrix-media.css" />
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/jquery.gritter.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -33,7 +34,7 @@
         <ul class="nav">
             <li class="dropdown" id="profile-messages">
                 <a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i
-                        class="icon icon-user"></i> <span class="text" style="color:#fff;">Welcome User</span><b class="caret"></b></a>
+                        class="fa icon-user"></i> <span class="text" style="color:#fff;">Welcome User</span><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="#"><i class="icon-user"></i> My Profile</a></li>
                     <li class="divider"></li>
@@ -57,8 +58,8 @@
             <li class="submenu"><a href="#"><i class="fa fa-user"></i> <span>User</span> <span
                         class="label label-important"><i class="fa fa-caret-down"></i></span></a>
                 <ul>
-                    <li><a href="user/add_new_user.html">Add User</a></li>
-                    <li><a href="user/edit_user.html">Edit User</a></li>
+                    <li><a href="add_new_user.html">Add User</a></li>
+                    <li><a href="edit_user.html">Edit User</a></li>
                 </ul>
             </li>
 
@@ -107,9 +108,164 @@
         <div class="container-fluid">
 
             <div class="row-fluid" style="background-color: white; min-height: 1000px; padding:10px;">
-                <h1><u>Thisara Pakaya</u></h1>
-                <p style="font-size: 30px;">මම වදයෙක් වෙමි. මං ආසම ගුලි කන්න. තව මං ආසයි කොල්ලොන්ට.</p>
-                <img src="file.jpg">
+                <div class="span12">
+                    <div class="widget-box">
+                        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+                            <h5>Personal-info</h5>
+                        </div>
+                        <div class="widget-content nopadding">
+                            <form name="form2" action="" method="post" class="form-horizontal">
+                                <div class="span4">
+                                    <div class="billlable">
+                                        <label class="control-label">Full Name :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11 btnradius" placeholder="Full name" name="fullname" />
+                                        </div>
+                                    </div>
+                                    <div class="billlable">
+                                        <label class="control-label">Item Name :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11 btnradius" placeholder="Item name" name="itemname" />
+                                        </div>
+                                    </div>
+                                    <div class="billlable">
+                                        <label class="control-label">Product Name :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11 btnradius" placeholder="Product name" name="productname" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="billlable">
+                                        <label class="control-label">Bill Type :</label>
+                                        <div class="controls">
+                                            <select name="billtype" class="span11 btnradius">
+                                                <option>Cash</option>
+                                                <option>Card</option>
+                                                <option>Cheqe</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="billlable">
+                                        <label class="control-label">Price :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11 btnradius" placeholder="Price" name="price" />
+                                        </div>
+                                    </div>
+                                    <div class="billlable">
+                                        <label class="control-label">QTY :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11 btnradius" placeholder="QTY" name="qty" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="billlable">
+                                        <label class="control-label">Date :</label>
+                                        <div class="controls">
+                                            <input type="date" class="span11 btnradius" name="date" />
+                                        </div>
+                                    </div>
+                                    <div class="billlable">
+                                        <label class="control-label">Discount :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11 btnradius" placeholder="Discount" name="discount" />
+                                        </div>
+                                    </div>
+                                    <div class="billlable">
+                                        <label class="control-label">Total :</label>
+                                        <div class="controls">
+                                            <input type="text" class="span11 btnradius" placeholder="Total" name="total" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <!--write a new css for this button-->
+                                    <button type="submit" name="submit1" class="btn resetbtn"><i class="fa fa-refresh"></i></button>
+                                    <button type="submit" name="submit1" class="btn addbtn">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <table class="table table-bordered table-striped reporttable">
+                            <thead>
+                                <tr>
+                                    <th>Item Name</th>
+                                    <th>Product Name</th>
+                                    <th>Product Price</th>
+                                    <th>QTY</th>
+                                    <th>Discount</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Product</td>
+                                    <td>Rs.500/=</td>
+                                    <td>10</td>
+                                    <td>Rs.100/=</td>
+                                    <td>Rs.4900/=</td>
+                                    <td><a href=""><center><button class="btn editbtn"><i class="fa fa-pencil"></i></button></center></a></td>
+                                    <td><a href=""><center><button class="btn deletebtn"><i class="fa fa-trash"></i></button></center></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Product</td>
+                                    <td>Rs.500/=</td>
+                                    <td>10</td>
+                                    <td>Rs.100/=</td>
+                                    <td>Rs.4900/=</td>
+                                    <td><a href=""><center><button class="btn editbtn"><i class="fa fa-pencil"></i></button></center></a></td>
+                                    <td><a href=""><center><button class="btn deletebtn"><i class="fa fa-trash"></i></button></center></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Product</td>
+                                    <td>Rs.500/=</td>
+                                    <td>10</td>
+                                    <td>Rs.100/=</td>
+                                    <td>Rs.4900/=</td>
+                                    <td><a href=""><center><button class="btn editbtn"><i class="fa fa-pencil"></i></button></center></a></td>
+                                    <td><a href=""><center><button class="btn deletebtn"><i class="fa fa-trash"></i></button></center></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Product</td>
+                                    <td>Rs.500/=</td>
+                                    <td>10</td>
+                                    <td>Rs.100/=</td>
+                                    <td>Rs.4900/=</td>
+                                    <td><a href=""><center><button class="btn editbtn"><i class="fa fa-pencil"></i></button></center></a></td>
+                                    <td><a href=""><center><button class="btn deletebtn"><i class="fa fa-trash"></i></button></center></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Product</td>
+                                    <td>Rs.500/=</td>
+                                    <td>10</td>
+                                    <td>Rs.100/=</td>
+                                    <td>Rs.4900/=</td>
+                                    <td><a href=""><center><button class="btn editbtn"><i class="fa fa-pencil"></i></button></center></a></td>
+                                    <td><a href=""><center><button class="btn deletebtn"><i class="fa fa-trash"></i></button></center></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Product</td>
+                                    <td>Rs.500/=</td>
+                                    <td>10</td>
+                                    <td>Rs.100/=</td>
+                                    <td>Rs.4900/=</td>
+                                    <td><a href=""><center><button class="btn editbtn"><i class="fa fa-pencil"></i></button></center></a></td>
+                                    <td><a href=""><center><button class="btn deletebtn"><i class="fa fa-trash"></i></button></center></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
 
         </div>
