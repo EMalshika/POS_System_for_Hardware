@@ -92,8 +92,8 @@
     margin-top: 10px;
 }
 .reportsbox{
-    background-color: #bce6ff;
-    box-shadow: 0px 3px rgb(161, 205, 219);
+    background-color: #f2f0e6;
+    box-shadow: 0px 3px #ebe8dd;
     border-radius: 15px;
     padding-top: 30px;
     padding-left: 28px;
@@ -163,6 +163,18 @@
     border-radius: 12px;
 }
 .addbtn:hover{
+    background-color: #08c;
+    color: white;
+}
+.printbtn{
+    background-color: #08c;
+    color: white;
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 12px;
+}
+.printbtn:hover{
     background-color: #08c;
     color: white;
 }
